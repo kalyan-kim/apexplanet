@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: back 5s infinite;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 15px 18px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: but 4s infinite;
+}
+
+button:hover {
+    background-color: #357ab8;
+    height: 50px;
+    width: 220px;
+}
+
+.affirmation-output {
+    margin-top: 30px;
+}
+
+#displayAffirmation {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+
+@keyframes back{
+    30%{
+       background:cyan;
+    }
+     60%{
+       background:rgb(255, 18, 61);
+    }
+     90%{
+       background:cyan;
+    }
+}
+@keyframes but{
+    30%{
+       background:cyan;
+    }
+     60%{
+       background:rgb(255, 18, 61);
+    }
+     90%{
+       background:cyan;
+    }
+}
