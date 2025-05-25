@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #eef2f3;
+  padding: 20px;
+}
+
+.container, .todo-section {
+  max-width: 500px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.gender {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d99;
+}
+
+p {
+  font-size: 14px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.todo-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.todo-section li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f3f3f3;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.todo-section li.checked {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-section li span {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}

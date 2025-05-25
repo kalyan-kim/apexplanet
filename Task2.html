@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form & To-Do List</title>
+  <link rel="stylesheet" href="Task2.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="Task2.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form id="registration-form">
+      <input type="text" id="fname" placeholder="First Name">
+      <p id="fname-text"></p>
+
+      <input type="text" id="lname" placeholder="Last Name">
+      <p id="lname-text"></p>
+
+      <input type="date" id="dob">
+      <p id="dob-text"></p>
+
+      <input type="email" id="email" placeholder="Email">
+      <p id="mail-text"></p>
+
+      <select id="city">
+        <option>Select City</option>
+        <option>Visakhapatnam</option>
+        <option>Anakapalli</option>
+        <option>Pendurthi</option>
+        <option>Gajuwaka</option>
+        <option>Madhuruwada</option>
+      </select>
+      <p id="city-text"></p>
+
+      <div class="gender">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+      <p id="gender-text"></p>
+
+      <input type="password" id="pwd" placeholder="Password">
+      <p id="pwd-text"></p>
+
+      <input type="password" id="repwd" placeholder="Confirm Password">
+      <p id="repwd-text"></p>
+
+      <button type="submit">Submit</button>
+      <p id="button-text"></p>
+    </form>
+  </div>
+
+  <div class="todo-section">
+    <h2>To-Do List</h2>
+    <div class="todo-input">
+      <input type="text" id="inputbox" placeholder="Add your task">
+      <button onclick="AddTask()">Add</button>
+    </div>
+    <ul id="listcontainer"></ul>
+  </div>
+</body>
+</html>
